@@ -95,7 +95,7 @@ class AlienInvasion:
             # Watch for keyboard and mouse events.
             self._check_events()
             self.ship.update()
-            self.bullets.update()            
+            self._update_bullets()            
 
             self._update_screen()
             self.clock.tick(60)
